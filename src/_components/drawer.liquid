@@ -1,0 +1,8 @@
+function openDrawer(){
+        const drawer = document.querySelector('#drawer1');
+        debugger;
+        const openButton = document.querySelector('#openButton');
+        const closeButton = drawer.querySelector('sl-button[variant="primary"]');
+        openButton.addEventListener('click', () => drawer.show());
+        closeButton.addEventListener('click', () => drawer.hide());
+      }

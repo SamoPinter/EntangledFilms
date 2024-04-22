@@ -14,11 +14,3 @@ console.info("Bridgetown is loaded!")
     const selectedItem = event.detail.item;
     console.log(selectedItem.value);
   });
-
-  function onLoadDrawer(){
-    const drawer = document.querySelector('.drawer-overview');
-    const openButton = drawer.nextElementSibling;
-    const closeButton = drawer.querySelector('sl-button[variant="primary"]');
-    openButton.addEventListener('click', () => drawer.show());
-    closeButton.addEventListener('click', () => drawer.hide());
-  }
