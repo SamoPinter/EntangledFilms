@@ -500,7 +500,7 @@ select {
 }
 
 .container {
-    width: 100%
+    width: 100%;
 }
 
 @media (min-width:640px) {
@@ -1554,7 +1554,11 @@ select {
 }
 
 .border-b {
-    border-bottom-width: 1px
+    border-bottom-width: 1px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: white;
 }
 
 .border-transparent {
@@ -1605,7 +1609,7 @@ select {
 }
 
 .bg-patternTop {
-    background-image: url(../images/patternTop.svg)
+    background-image: url(../templates/patternTop.svg)
 }
 
 .bg-cover {
@@ -2009,11 +2013,11 @@ select {
     --tw-shadow: rgba(103, 151, 255, .11) 0px 8px 60px 0px, rgba(103, 151, 255, .11) 0px 12px 90px 0px;
     ;
     --tw-shadow-colored: 0px 8px 60px 0px var(--tw-shadow-color), 0px 12px 90px 0px;
-    var(--tw-shadow-color)
+    
 }
 
 .ring-offset-2 {
-    --tw-ring-offset-width: 2px
+    --tw-ring-offset-width: 2px;
 }
 
 .ring-offset-current {
