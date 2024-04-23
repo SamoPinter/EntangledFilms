@@ -182,7 +182,8 @@ layout: default
           <p class="mx-auto text-lg leading-snug text-slate-500">Check about our films right here.</p>
         </div>
         <div>
-        <sl-details summary="Toggle Me">
+        <sl-checkbox>Checkbox</sl-checkbox>
+        <sl-details class="details" summary="Toggle Me">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
   aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 </sl-details>

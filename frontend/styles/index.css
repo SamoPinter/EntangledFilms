@@ -2598,3 +2598,7 @@ select {
     width: 33.333333%
   }
 }
+
+.details {
+  background: red;
+}
