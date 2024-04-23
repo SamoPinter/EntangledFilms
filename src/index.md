@@ -125,7 +125,7 @@ layout: default
         </ul>
         </div>
          <br class="hidden lg:block">
-        <div class="flex flex-wrap -mx-4 -mt-4 -mb-10 space-y-6 sm:-m-4 md:space-y-0">
+        <!-- <div class="flex flex-wrap -mx-4 -mt-4 -mb-10 space-y-6 sm:-m-4 md:space-y-0">
           <div class="flex p-4 lg:w-1/3">
             <div class="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mb-4 text-black rounded-full bg-slate-200">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
@@ -170,7 +170,7 @@ layout: default
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
         <section id="films">
       <div class="container px-5 py-32 mx-auto lg:px-24">
         <div class="flex flex-col w-full mb-20 text-left lg:text-center">
@@ -180,6 +180,12 @@ layout: default
             to reach your needs faster. -->
           </h2>
           <p class="mx-auto text-lg leading-snug text-slate-500">Check about our films right here.</p>
+        </div>
+        <div>
+        <sl-details summary="Toggle Me">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</sl-details>
         </div>
         <div>
         <div class="dropdown-selection">
@@ -660,7 +666,7 @@ layout: default
           <p class="mx-auto text-base leading-snug tracking-tight text-slate-500 lg:w-1/2">Some text</p>
         </div>
         <div class="flex flex-row justify-center my-8 text-3xl font-bold tracking-tighter text-black">
-          <div class="mx-3 font-serif">Annuall prices</div>
+          <div class="mx-3 font-serif">Toggle2</div>
           <!-- Toggle Button -->
           <label for="toggle" class="inline-flex items-center cursor-pointer">
             <!-- toggle -->
@@ -673,132 +679,129 @@ layout: default
               <div class="absolute inset-y-0 left-0 w-5 h-5 bg-blue-600 rounded-full shadow toggle_dot"></div>
             </div>
           </label>
-          <div class="mx-3 font-serif">Monthly prices</div>
+          <div class="mx-3 font-serif">Toggle1</div>
         </div>
-        {% rendercontent "card", heading: "Heading", description: "DESC" %}
+        {% rendercontent "card", heading: "Heading", description: "Description" %}
         <div>
          <ul class="pt-12">
                 <li class="inline-flex items-center mb-2 text-base tracking-tighter text-slate-600">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  Free demo.
+                  first text
                 </li>
                 <li class="flex items-center mb-2 text-base tracking-tighter line-through text-slate-400">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                   </svg>
-                  Full widget customization
+                  text
                 </li>
                 <li class="flex items-center mb-2 text-base tracking-tighter line-through text-slate-400">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                   </svg>
-                  Ticketing system
+                  Text
                 </li>
                 <li class="flex items-center mb-2 text-base tracking-tighter line-through text-slate-400">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                   </svg>
-                  ta security
+                  Text
                 </li>
                 <li class="flex items-center mb-6 text-base tracking-tighter line-through text-slate-400">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                   </svg>
-                  Advance Reporting
+                  Text
                 </li>
               </ul>
-              <button class="inline-flex items-center justify-center px-8 py-3 text-lg text-black transition-all duration-500 ease-in-out transform border-2 rounded-lg hover:lack md:mb-2 lg:mb-0 focus:ring-2 ring-offset-current ring-offset-2">
-                Buy
-              </button>
-              <p class="mt-3 text-xs italic text-slate-500">*Secure payments with Stripe.</p>
+              <!-- <p class="mt-3 text-xs italic text-slate-500">*Secure payments with Stripe.</p> -->
               </div>
               {% endrendercontent %}
           <div class="w-full p-4 xl:w-1/3">
             <div class="relative flex flex-col h-full p-6 overflow-hidden bg-white border shadow-monotone rounded-2xl">
-              <strong class="mb-4 text-sm font-semibold tracking-tighter text-black uppercase lg-ml:auto title-font lg:ml-auto"> Individual</strong>
-              <div id="month" class="items-center hidden pb-4 mb-4 font-serif text-5xl leading-none text-black month">$39</div>
-              <div id="annual" class="items-center pb-4 mb-4 font-serif text-5xl leading-none text-black annual">$249</div>
+              <strong class="mb-4 text-sm font-semibold tracking-tighter text-black uppercase lg-ml:auto title-font lg:ml-auto"> Description</strong>
+              <div id="month" class="items-center hidden pb-4 mb-4 font-serif text-5xl leading-none text-black month">Heading</div>
+              <div id="annual" class="items-center pb-4 mb-4 font-serif text-5xl leading-none text-black annual">Heading</div>
               <ul class="pt-12">
                 <li class="flex items-center mb-2 text-base tracking-tighter text-slate-500">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  Unlimited chat history.
+                  Text
                 </li>
                 <li class="flex items-center mb-2 text-base tracking-tighter text-slate-500">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  Full widget customization
+                  Text
                 </li>
                 <li class="flex items-center mb-2 text-base tracking-tighter text-slate-500">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  Ticketing system
+                  Text
                 </li>
                 <li class="flex items-center mb-2 text-base tracking-tighter line-through text-slate-400">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                   </svg>
-                  Data security
+                  Text
                 </li>
                 <li class="flex items-center mb-6 text-base tracking-tighter line-through text-slate-400">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                   </svg>
-                  Advance Reporting
+                  Text
                 </li>
               </ul>
               <button class="inline-flex items-center justify-center px-8 py-3 text-lg text-white transition-all duration-500 ease-in-out transform bg-black border-2 rounded-lg lack hover:text-white md:mb-2 lg:mb-0 hover:border-white hover:bg-slate-500 focus:ring-2 ring-offset-current ring-offset-2">
-                Buy
+                Text
               </button>
-              <p class="mt-3 text-xs italic text-black">*Secure payments with Stripe.</p>
+              <!-- <p class="mt-3 text-xs italic text-black">*Secure payments with Stripe.</p> -->
             </div>
           </div>
           <div class="w-full p-4 xl:w-1/3">
             <div class="relative flex flex-col h-full p-6 overflow-hidden bg-white border shadow-monotone rounded-2xl">
-              <strong class="mb-4 text-sm font-semibold tracking-tighter text-black uppercase lg:ml-auto title-font"> Team</strong>
-              <div id="month" class="items-center hidden pb-4 mb-4 font-serif text-5xl leading-none text-black month">$79</div>
-              <div id="annual" class="items-center pb-4 mb-4 font-serif text-5xl leading-none text-black annual">$749</div>
+              <strong class="mb-4 text-sm font-semibold tracking-tighter text-black uppercase lg:ml-auto title-font"> Description</strong>
+              <div id="month" class="items-center hidden pb-4 mb-4 font-serif text-5xl leading-none text-black month">Heading</div>
+              <div id="annual" class="items-center pb-4 mb-4 font-serif text-5xl leading-none text-black annual">Heading</div>
               <ul class="pt-12">
                 <li class="flex items-center mb-2 text-base tracking-tighter text-slate-500">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  Unlimited chat history.
+                  Text
                 </li>
                 <li class="flex items-center mb-2 text-base tracking-tighter text-slate-500">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  Full widget customization
+                  Text
                 </li>
                 <li class="flex items-center mb-2 text-base tracking-tighter text-slate-500">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  Ticketing system
+                  Text
                 </li>
                 <li class="flex items-center mb-2 text-base tracking-tighter text-slate-500">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  Data security
+                  Text
                 </li>
                 <li class="flex items-center mb-6 text-base tracking-tighter text-slate-500">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  Advanced reporting
+                  Text
                 </li>
               </ul>
               <button class="inline-flex items-center justify-center px-8 py-3 text-lg text-black transition-all duration-500 ease-in-out transform border-2 rounded-lg hover:lack md:mb-2 lg:mb-0 focus:ring-2 ring-offset-current ring-offset-2">
-                Buy
+                Text
               </button>
-              <p class="mt-3 text-xs italic text-slate-500">*Secure payments with Stripe.</p>
+              <!-- <p class="mt-3 text-xs italic text-slate-500">*Secure payments with Stripe.</p> -->
             </div>
           </div>
         </div>
@@ -819,161 +822,6 @@ layout: default
         }
       }
     </script>
-    <footer class="bg-black" aria-labelledby="footer-heading">
-      <h2 id="footer-heading" class="sr-only">Footer</h2>
-      <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-12 lg:py-24">
-        <div class="justify-center text-center lg:text-left lg:justify-start">
-          <div class="text-comet">
-            <span class="text-lg font-bold text-white lg:text-2xl"><div class="inline-flex items-center">
-                <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 229 229" style="enable-background: new 0 0 229 229" xml:space="preserve" fill="currentColor">
-                  <g transform="matrix( 1, 0, 0, 1, 128,27) ">
-                    <g>
-                      <g id="Layer0_0_MEMBER_0_FILL">
-                        <path d="M-84.1,15.3h-8.3v74.3h8.3V15.3z"></path>
-                      </g>
-                    </g>
-                  </g>
-                  <g transform="matrix( 1, 0, 0, 1, 128,27) ">
-                    <g>
-                      <g id="Layer0_0_MEMBER_1_FILL">
-                        <path d="M-67.5,15.3h-8.4v74.3h8.4V15.3z"></path>
-                      </g>
-                    </g>
-                  </g>
-                  <g transform="matrix( 1, 0, 0, 1, 128,27) ">
-                    <g>
-                      <g id="Layer0_0_MEMBER_2_FILL">
-                        <path d="M-59.4,15.3v74.3h8.4V15.3H-59.4z"></path>
-                      </g>
-                    </g>
-                  </g>
-                  <g transform="matrix( 1, 0, 0, 1, 128,27) ">
-                    <g>
-                      <g id="Layer0_0_MEMBER_3_FILL">
-                        <path d="M-34.5,15.3h-8.3v74.3h8.3V15.3z"></path>
-                      </g>
-                    </g>
-                  </g>
-                  <g transform="matrix( 1, 0, 0, 1, 128,27) ">
-                    <g>
-                      <g id="Layer0_0_MEMBER_4_FILL">
-                        <path d="M-18,15.3h-8.4v74.3h8.4V15.3z"></path>
-                      </g>
-                    </g>
-                  </g>
-                  <g transform="matrix( 1, 0, 0, 1, 128,27) ">
-                    <g>
-                      <g id="Layer0_0_MEMBER_5_FILL">
-                        <path d="M63.4,89.7v-8.4h-74.3v8.4H63.4z"></path>
-                      </g>
-                    </g>
-                  </g>
-                  <g transform="matrix( 1, 0, 0, 1, 128,27) ">
-                    <g>
-                      <g id="Layer0_0_MEMBER_6_FILL">
-                        <path d="M63.4,73.2v-8.4h-74.3v8.4H63.4z"></path>
-                      </g>
-                    </g>
-                  </g>
-                  <g transform="matrix( 1, 0, 0, 1, 128,27) ">
-                    <g>
-                      <g id="Layer0_0_MEMBER_7_FILL">
-                        <path d="M63.4,56.7v-8.3h-74.3v8.3H63.4z"></path>
-                      </g>
-                    </g>
-                  </g>
-                  <g transform="matrix( 1, 0, 0, 1, 128,27) ">
-                    <g>
-                      <g id="Layer0_0_MEMBER_8_FILL">
-                        <path d="M63.4,40.2v-8.4h-74.3v8.4H63.4z"></path>
-                      </g>
-                    </g>
-                  </g>
-                  <g transform="matrix( 1, 0, 0, 1, 128,27) ">
-                    <g>
-                      <g id="Layer0_0_MEMBER_9_FILL">
-                        <path d="M63.4,23.6v-8.4h-74.3v8.4H63.4z"></path>
-                      </g>
-                    </g>
-                  </g>
-                  <g transform="matrix( 1, 0, 0, 1, 128,27) ">
-                    <g>
-                      <g id="Layer0_0_MEMBER_10_FILL">
-                        <path d="M63.4,89.7H55v74.3h8.4V89.7z"></path>
-                      </g>
-                    </g>
-                  </g>
-                  <g transform="matrix( 1, 0, 0, 1, 128,27) ">
-                    <g>
-                      <g id="Layer0_0_MEMBER_11_FILL">
-                        <path d="M46.9,89.7h-8.4v74.3h8.4V89.7z"></path>
-                      </g>
-                    </g>
-                  </g>
-                  <g transform="matrix( 1, 0, 0, 1, 128,27) ">
-                    <g>
-                      <g id="Layer0_0_MEMBER_12_FILL">
-                        <path d="M30.3,89.7H22v74.3h8.3V89.7z"></path>
-                      </g>
-                    </g>
-                  </g>
-                  <g transform="matrix( 1, 0, 0, 1, 128,27) ">
-                    <g>
-                      <g id="Layer0_0_MEMBER_13_FILL">
-                        <path d="M13.9,164.1V89.7H5.5v74.3H13.9z"></path>
-                      </g>
-                    </g>
-                  </g>
-                  <g transform="matrix( 1, 0, 0, 1, 128,27) ">
-                    <g>
-                      <g id="Layer0_0_MEMBER_14_FILL">
-                        <path d="M-2.7,89.7h-8.4v74.3h8.4V89.7z"></path>
-                      </g>
-                    </g>
-                  </g>
-                  <g transform="matrix( 1, 0, 0, 1, 128,27) ">
-                    <g>
-                      <g id="Layer0_0_MEMBER_15_FILL">
-                        <path d="M-18.1,164.2v-8.4h-74.3v8.4H-18.1z"></path>
-                      </g>
-                    </g>
-                  </g>
-                  <g transform="matrix( 1, 0, 0, 1, 128,27) ">
-                    <g>
-                      <g id="Layer0_0_MEMBER_16_FILL">
-                        <path d="M-18.1,147.6v-8.3h-74.3v8.3H-18.1z"></path>
-                      </g>
-                    </g>
-                  </g>
-                  <g transform="matrix( 1, 0, 0, 1, 128,27) ">
-                    <g>
-                      <g id="Layer0_0_MEMBER_17_FILL">
-                        <path d="M-18.1,131.1v-8.4h-74.3v8.4H-18.1z"></path>
-                      </g>
-                    </g>
-                  </g>
-                  <g transform="matrix( 1, 0, 0, 1, 128,27) ">
-                    <g>
-                      <g id="Layer0_0_MEMBER_18_FILL">
-                        <path d="M-92.4,106.2v8.4h74.3v-8.4H-92.4z"></path>
-                      </g>
-                    </g>
-                  </g>
-                  <g transform="matrix( 1, 0, 0, 1, 128,27) ">
-                    <g>
-                      <g id="Layer0_0_MEMBER_19_FILL">
-                        <path d="M-92.4,89.7v8.3h74.3v-8.3H-92.4z"></path>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
-                <span class="font-serif text-base">Monotone</span>
-              </div></span>
-            <p class="text-sm text-white text-club">Wicked templates for wicked dev's</p>
-          </div>
-        </div>
-      </div>
-    </footer>
    {% rendercontent "test" %}
    {% endrendercontent %}
     <script src="./templates/app.js.prenos"></script>
